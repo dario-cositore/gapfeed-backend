@@ -1,0 +1,62 @@
+{
+  "agent": "Luna Hart",
+  "role": "Marketing & Community Manager",
+  "vertical": "general",
+
+  "cycle": {
+    "sleep_between_cycles": 3600,
+    "trend_scout_interval": 14400,
+    "content_creation_time": "08:00",
+    "scheduling_buffer_hours": 4
+  },
+  "post_gap_hours": 4,
+  "viral_threshold": 0.8,
+  "approval_required": true,
+
+  "blog": {
+    "enabled": true,
+    "min_posts_per_week": 1,
+    "blog_dir": "../../website/dariocositore.com/blog",
+    "deploy_after_create": true
+  },
+
+  "social": {
+    "enabled": true,
+    "typefully_api_key": "${TYPEFULLY_API_KEY}",
+    "social_set_id": 292721,
+    "min_posts_per_day": 2,
+    "max_posts_per_day": 4,
+    "platforms": ["x", "linkedin"],
+    "post_times_cet": {
+      "x": ["10:00", "18:00"],
+      "linkedin": ["09:30"]
+    }
+  },
+
+  "trends": {
+    "enabled": true,
+    "sources": ["reddit", "hackernews", "x", "linkedin"],
+    "subreddits": ["startups", "SaaS", "entrepreneur", "programming", "SideProject"],
+    "alert_threshold": 0.7,
+    "act_before_peak_hours": 24
+  },
+
+  "data": {
+    "gapfeed_api": "https://gapfeed.com/api/db.php",
+    "gapfeed_api_key": "${GAPFEED_API_KEY}",
+    "resume_path": "../../website/dariocositore.com/Dario_Cositore_Resume.pdf"
+  },
+
+  "llm": {
+    "primary": "deepseek/deepseek-v3.2",
+    "fallback": "xiaomi/mimo-v2-flash",
+    "max_tokens": 2000,
+    "temperature": 0.7
+  },
+
+  "telegram": {
+    "enabled": true,
+    "bot_token": "${TELEGRAM_BOT_TOKEN}",
+    "chat_id": "${TELEGRAM_CHAT_ID}"
+  }
+}

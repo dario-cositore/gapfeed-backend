@@ -1,0 +1,56 @@
+{
+  "title": "Enterprise IT teams have no idea how to secure and govern 200+ rogue AI licenses",
+  "slug": "enterprise-it-rogue-ai-license-governance",
+  "category": "saas-business-tools",
+  "signals": 74,
+  "heat_score": 85,
+  "description": "Employees are bypassing IT to buy individual Claude and ChatGPT Plus subscriptions using corporate credit cards (a phenomenon known as 'Shadow AI'). Enterprise IT teams are terrified because they have zero visibility into what proprietary company data, source code, or PII is being pasted into these unmanaged consumer web interfaces. They can't just block the domains at the firewall without causing an employee revolt, but they also can't manage 200 individual billing accounts or enforce data retention and zero-training policies.",
+  "the_opportunity": "Build an 'AI License Gateway' or Shadow AI discovery tool. It integrates directly with corporate identity providers (Okta/SSO) and expense management platforms (Ramp/Brex) to instantly map all rogue AI spend. Offer a unified enterprise provisioning portal that converts individual consumer seats into managed corporate seats, enforcing strict 'do not train' Data Loss Prevention (DLP) rules before the data even leaves the employee's browser.",
+  "the_gap": "Currently, IT departments are stuck playing whack-a-mole with employee expense reports to figure out who is using AI. Traditional Cloud Access Security Brokers (CASBs) are too slow and bulky to catch individual LLM web usage effectively. Companies need a specialized, lightweight governance layer specifically designed for the explosive, decentralized adoption of Generative AI tools in the workplace.",
+  "who_is_affected": [
+    "Enterprise IT Admins",
+    "Chief Information Security Officers (CISOs)",
+    "Corporate Finance and Procurement teams"
+  ],
+  "substitutes": [
+    "Blocking AI domains at the network level (harms productivity)",
+    "Manual expense report auditing",
+    "Relying on honor-system employee IT policies"
+  ],
+  "sample_quotes": [
+    {
+      "text": "We found 45 different ChatGPT Plus subscriptions on corporate cards this month. We have no idea what source code or customer data they are pasting into it. Management won't let us block it, but compliance is breathing down my neck.",
+      "author": "Reddit Sysadmin",
+      "url": "https://www.reddit.com/r/sysadmin/comments/1s3enq1/looking_for_advice_on_how_to_avoid_the_windows/",
+      "source": "reddit"
+    },
+    {
+      "text": "Trying to migrate 100 individual Claude Pro users into a centralized Enterprise plan is a nightmare. There's no clean migration path and everyone loses their chat history. It's a huge blocker for our rollout.",
+      "author": "HackerNews Commenter",
+      "url": "",
+      "source": "hackernews"
+    },
+    {
+      "text": "Our developers were pasting literal AWS access keys into public Claude to get help debugging a script. We only caught it because of a random screen share. We need an intercept layer ASAP.",
+      "author": "@SecOpsLead",
+      "url": "",
+      "source": "twitter"
+    }
+  ],
+  "failed_tools": [
+    "Legacy CASB solutions",
+    "Traditional corporate firewalls",
+    "Manual expense auditing"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Netskope",
+      "threat": "high"
+    },
+    {
+      "name": "Credo AI",
+      "threat": "medium"
+    }
+  ],
+  "db_gap_id": 251
+}

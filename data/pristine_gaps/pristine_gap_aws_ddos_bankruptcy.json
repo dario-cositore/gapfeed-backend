@@ -1,0 +1,56 @@
+{
+  "title": "AWS offers zero native financial protection against DDoS attacks, leaving solo founders with unpayable $15,000+ bills",
+  "slug": "aws-ddos-bankruptcy-solo-founders-unpayable-bills",
+  "category": "devtools-infrastructure",
+  "signals": 118,
+  "heat_score": 93,
+  "description": "Solo developers and small startups hosting assets on AWS S3 or EC2 are being hit with devastating Layer 7 DDoS attacks or malicious traffic spikes. Because AWS does not offer hard billing caps (only alerts), the bandwidth and request costs can spiral out of control in hours. Founders are waking up to $15,000+ invoices for bandwidth they didn't authorize. Even when AWS support offers a 'goodwill' 30% reduction, the remaining balance is still enough to bankrupt a bootstrapper.",
+  "the_opportunity": "Build a specialized 'Indie Hacker Reverse Proxy' or CDN that strictly enforces a fixed maximum monthly spend. If the bandwidth hits the $20 limit, the service instantly returns a 429 or drops the connection entirely, preventing any upstream cloud provider from billing further. Market it as 'Anti-Bankruptcy Hosting' specifically for side projects and indie SaaS.",
+  "the_gap": "The cloud computing market is designed for enterprise clients who value 100% uptime over cost control. But solo founders value cost control over uptime,they would much rather their site go offline for the weekend than owe Amazon $15,000 on Monday morning. AWS refuses to build a 'kill switch,' leaving millions of indie developers exposed to catastrophic financial risk.",
+  "who_is_affected": [
+    "Indie Hackers and solo founders",
+    "Bootstrapped SaaS businesses",
+    "Open-source maintainers hosting public assets"
+  ],
+  "substitutes": [
+    "Cloudflare Free Tier (can still pass through uncached bandwidth)",
+    "AWS WAF (too expensive and complex to configure)",
+    "Vercel/Netlify (have their own viral pricing issues)"
+  ],
+  "sample_quotes": [
+    {
+      "text": "AWS reduced my $15k S3 bill to $10.5k after a DDoS. I still can't pay this. What can I do? About a month ago I made a post about a DDoS/unexpected traffic spike on my AWS S3 account...",
+      "author": "Reddit User",
+      "url": "https://www.reddit.com/r/aws/comments/1s1md42/aws_reduced_my_15k_s3_bill_to_105k_after_a_ddos_i/",
+      "source": "reddit"
+    },
+    {
+      "text": "Need urgent help AWS account compromised and huge bill generated. Hi everyone, Our AWS account was compromised in February 2026. Someone created many resources (mostly EC2 and related services)...",
+      "author": "Reddit User",
+      "url": "https://www.reddit.com/r/aws/comments/1rliotm/need_urgent_help_aws_account_compromised_and_huge/",
+      "source": "reddit"
+    },
+    {
+      "text": "Account suspended during active DDoS billing review , seeking guidance on escalation paths. Looking for guidance from others who have dealt with AWS account suspensions during active billing or security incidents.",
+      "author": "Reddit User",
+      "url": "https://www.reddit.com/r/aws/comments/1qefo3w/account_suspended_during_active_ddos_billing/",
+      "source": "reddit"
+    }
+  ],
+  "failed_tools": [
+    "AWS Billing Alerts (too slow)",
+    "AWS WAF (complex/expensive)",
+    "AWS Shield Standard"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Cloudflare",
+      "threat": "high"
+    },
+    {
+      "name": "Hetzner",
+      "threat": "low"
+    }
+  ],
+  "db_gap_id": 605
+}

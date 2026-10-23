@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Database
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/briefs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+config/secrets.env
+api/config.local.php
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Node
+node_modules/
+
+# Temporary/archived files
+*.bak
+*.tmp
+*~
+
+# Archive (unused code)
+.archive/
+
+# Coverage
+htmlcov/
+.coverage
+
+# Media (not essential for repo)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.pdf
+
+# Keep README and docs
+!README.md
+!docs/*.md
+!docs/*.html
+# Agent runtime state (per-machine)
+TheRealAgents/*/state/
+TheRealAgents/*/memory/

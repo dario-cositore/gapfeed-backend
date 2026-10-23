@@ -1,0 +1,56 @@
+{
+  "title": "Notion's aggressive push into enterprise features is alienating its core solo and SMB user base",
+  "slug": "notion-enterprise-bloat-alienating-solo-users",
+  "category": "productivity-software",
+  "signals": 89,
+  "heat_score": 91,
+  "description": "Notion used to be the beloved, simple 'all-in-one workspace' for solo founders and small teams. Recently, users are experiencing massive feature bloat, confusing pricing tier changes, and aggressive upsells for 'Notion AI' and Enterprise calendar features they don't want or need. The app is getting noticeably slower, the UI is increasingly cluttered, and simple document management is buried under complex database relations. Users are actively looking for a 'dumbed down,' fast alternative.",
+  "the_opportunity": "Build a hyper-fast, offline-first markdown notes and wiki app specifically for solo builders and small teams (1-10 people). Strip out the complex database relations and AI wrappers entirely. Focus 100% on speed, native local files, and dead-simple web sharing. Price it as a one-time lifetime license ($99) or a cheap flat $5/mo, explicitly marketing it as 'Notion without the enterprise bloat.'",
+  "the_gap": "Productivity tools eventually suffer from the 'Enterprise Pivot Curse',they build for SMBs, gain traction, and then abandon those SMBs to build heavy, expensive features for Fortune 500 companies. There is a massive vacuum right now for a premium, lightweight collaborative wiki that refuses to add AI or complex enterprise permissions, catering strictly to speed-obsessed small teams.",
+  "who_is_affected": [
+    "Solo founders and Indie Hackers",
+    "Students and academics",
+    "Small agencies and teams under 10 people"
+  ],
+  "substitutes": [
+    "Obsidian (too steep of a learning curve, hard to collaborate)",
+    "Apple Notes (too basic, locked to ecosystem)",
+    "Google Docs (poor organization for wikis)"
+  ],
+  "sample_quotes": [
+    {
+      "text": "Notion is just too slow now. Every time I open it I get a popup about Notion AI or some new enterprise calendar feature. I just want to write a text document and share it with my co-founder without it taking 5 seconds to load.",
+      "author": "Reddit User",
+      "url": "",
+      "source": "reddit"
+    },
+    {
+      "text": "They ruined the pricing for small teams. We are 3 people and the jump from free to the tier that actually gives us what we need is absurd. Looking for a fast markdown alternative that just works.",
+      "author": "@startup_dev",
+      "url": "",
+      "source": "twitter"
+    },
+    {
+      "text": "I spent 3 days building a 'second brain' system in Notion only to realize I hate using it because the mobile app takes forever to sync. Moved back to plain text files.",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=0a-o9DZumjE&lc=Ugy2f6nR9LWkeiARDYV4AaABAg#37712f4e",
+      "source": "youtube"
+    }
+  ],
+  "failed_tools": [
+    "Notion (Current version)",
+    "Confluence (Too enterprise)",
+    "Evernote"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Obsidian",
+      "threat": "high"
+    },
+    {
+      "name": "Bear",
+      "threat": "medium"
+    }
+  ],
+  "db_gap_id": 273
+}

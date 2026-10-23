@@ -1,0 +1,56 @@
+{
+  "title": "Tenants are losing thousands to property manager neglect and misapplied fees with zero accountability",
+  "slug": "tenants-losing-thousands-property-manager-neglect",
+  "category": "consumer-tech",
+  "signals": 39,
+  "heat_score": 83,
+  "description": "Renters are increasingly victimized by digitized property management companies that automate fee collection but ignore maintenance and dispute resolution. Tenants report having security deposits wrongfully withheld, move-in fees misapplied, and critical infrastructure (like frozen pipes) left unaddressed for weeks. The power dynamic is entirely skewed: landlords use automated systems to instantly penalize tenants, but tenants have no structural leverage to force accountability short of hiring a lawyer.",
+  "the_opportunity": "Build 'Tenant-Side Defensible Assets.' A platform that allows renters to automatically escrow their rent legally when maintenance SLA's are violated, or a service that leverages AI to instantly draft, escalate, and enforce formal dispute resolutions based on local tenant law. A $5B+ opportunity targeting the 44 million US renter households increasingly aware of their rights in toxic housing conditions.",
+  "the_gap": "Property management software (AppFolio, Buildium) is designed exclusively to protect the landlord's revenue. There is absolutely no counter-software built to protect the tenant's rights or enforce the landlord's obligations. Tenants need a specialized tool that creates an immediate, legally sound paper trail to combat 'algorithmic injustice.'",
+  "who_is_affected": [
+    "Renters dealing with mega-landlords",
+    "Tenants facing wrongful security deposit deductions",
+    "Individuals suffering from unresolved maintenance emergencies"
+  ],
+  "substitutes": [
+    "Posting on /r/Tenant for free advice",
+    "Hiring expensive local real estate attorneys",
+    "Giving up and losing the money"
+  ],
+  "sample_quotes": [
+    {
+      "text": "Property manager withholding deposit and demanding extra for damage/cleaning. Has stopped replying to my emails, need advice... I was charged a total of ~$780.",
+      "author": "Reddit User",
+      "url": "https://www.reddit.com/r/Tenant/comments/1rspttd/ca_property_manager_withholding_deposit_and/",
+      "source": "reddit"
+    },
+    {
+      "text": "Indiana tenant \u2013 property misapplied move-in fees and won't credit utility charge... need advice regarding how my property management is handling move-in fees.",
+      "author": "Reddit User",
+      "url": "https://www.reddit.com/r/Tenant/comments/1q24otw/indiana_tenant_property_misapplied_movein_fees/",
+      "source": "reddit"
+    },
+    {
+      "text": "Apt not move-in ready, lease signed. Warning: long post ahead! I'm sharing this on behalf of my cousin who is seeking advice about her current situation. She recently moved in to this new place...",
+      "author": "Reddit User",
+      "url": "https://www.reddit.com/r/Tenant/comments/1rfz3f5/apt_not_movein_ready_lease_signed/",
+      "source": "reddit"
+    }
+  ],
+  "failed_tools": [
+    "AppFolio Tenant Portal",
+    "Buildium",
+    "Standard email complaints"
+  ],
+  "existing_solutions": [
+    {
+      "name": "JustAnswer",
+      "threat": "medium"
+    },
+    {
+      "name": "DoNotPay",
+      "threat": "low"
+    }
+  ],
+  "db_gap_id": 261
+}

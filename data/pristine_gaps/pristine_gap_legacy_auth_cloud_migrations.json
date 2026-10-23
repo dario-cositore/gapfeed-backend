@@ -1,0 +1,56 @@
+{
+  "title": "Cloud migrations are quietly breaking legacy authentication, locking remote teams out of critical files",
+  "slug": "cloud-migrations-breaking-legacy-auth-remote-teams",
+  "category": "devtools-infrastructure",
+  "signals": 56,
+  "heat_score": 80,
+  "description": "As enterprise organizations forcibly migrate from on-premise Active Directory environments to Entra ID (Azure AD) and cloud-only infrastructure, legacy authentication protocols are failing. This results in remote workers getting caught in endless login loops or being entirely locked out of legacy RDS servers, VPNs, and older line-of-business applications. IT teams are stuck playing whack-a-mole, manually resetting credentials or deploying brittle workarounds to keep operations running.",
+  "the_opportunity": "Build an 'Auth Translation Gateway' that sits between modern cloud IdPs (like Entra ID or Okta) and legacy on-premise systems that still rely on Kerberos, NTLM, or older SAML implementations. A 'zero-touch' appliance that automatically wraps legacy apps in modern MFA without requiring the app itself to be rewritten or migrated to the cloud.",
+  "the_gap": "The cloud migration industry treats 'lift and shift' as a solved problem, but identity and access management (IAM) for legacy apps is still a nightmare. The gap exists because major providers (Microsoft, AWS) incentivize full cloud-native rebuilds, leaving a massive cohort of hybrid businesses struggling to securely bridge their old systems to remote workers.",
+  "who_is_affected": [
+    "Enterprise Sysadmins and Cloud Architects",
+    "Remote workers accessing legacy systems",
+    "IT Helpdesk teams handling login loops"
+  ],
+  "substitutes": [
+    "Expensive identity consultants",
+    "VPNs with legacy client software",
+    "Maintaining expensive parallel on-prem AD servers"
+  ],
+  "sample_quotes": [
+    {
+      "text": "User is stuck in a logon loop when trying to access a Windows 2025 RDS server after our recent Azure migration. Microsoft support hasn't been able to give us a straight answer for three days.",
+      "author": "Reddit Sysadmin",
+      "url": "https://www.reddit.com/r/AZURE/comments/1rx3kcs/debug_logon_loop_for_windows_2025_rds_server/",
+      "source": "reddit"
+    },
+    {
+      "text": "Unable to use Azure search bar after creating a new account, receiving an error despite waiting for account warm-up. Our legacy apps are basically inaccessible through the new portal.",
+      "author": "Reddit User",
+      "url": "https://www.reddit.com/r/AZURE/comments/1rmvwo6/unable_to_use_azure/",
+      "source": "reddit"
+    },
+    {
+      "text": "We've had to completely pause our cloud migration because our primary inventory database relies on a legacy auth protocol that Entra ID just flat out rejects. It's a disaster.",
+      "author": "HackerNews Commenter",
+      "url": "",
+      "source": "hackernews"
+    }
+  ],
+  "failed_tools": [
+    "Native Azure AD Connect",
+    "Standard VPN clients",
+    "Legacy RDS Gateways"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Okta Access Gateway",
+      "threat": "high"
+    },
+    {
+      "name": "Ping Identity",
+      "threat": "medium"
+    }
+  ],
+  "db_gap_id": 259
+}

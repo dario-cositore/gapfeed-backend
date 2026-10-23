@@ -1,0 +1,56 @@
+{
+  "title": "Notion's cloud lag and AI bloat is driving users back to plain text files and local-first software",
+  "slug": "notion-lag-ai-bloat-driving-users-to-local-first",
+  "category": "performance",
+  "signals": 47,
+  "heat_score": 81,
+  "description": "Users attempting to use Notion as a simple text editor or 'second brain' are experiencing severe performance degradation. The app takes noticeably longer to load on desktop and mobile, largely due to forced cloud syncing, database bloat, and the aggressive integration of unwanted AI features. Users are actively abandoning the platform because they just 'want to make a to-do list' but are met with a text editor that lags on modern hardware.",
+  "the_opportunity": "Build a hyper-fast, opinionated, offline-first Markdown editor that actively rejects AI generation. It should launch instantly, store files locally as plain text (making them future-proof and portable), but offer seamless, invisible end-to-end encrypted cloud syncing for multi-device access. Market it strictly as 'A text editor that actually respects your CPU.'",
+  "the_gap": "The tech industry is obsessed with shoving LLMs into every empty text field. This has created a massive counter-movement of users who are exhausted by AI wrappers and cloud latency. The gap is the demand for premium, highly optimized, 'dumb' tools that do exactly one thing flawlessly: let people type without waiting for a server response.",
+  "who_is_affected": [
+    "Writers, researchers, and academics",
+    "Developers looking for fast documentation tools",
+    "Productivity enthusiasts abandoning complex 'second brain' systems"
+  ],
+  "substitutes": [
+    "Obsidian (requires complex plugins and setup)",
+    "Apple Notes (locked to ecosystem)",
+    "Physical notebooks"
+  ],
+  "sample_quotes": [
+    {
+      "text": "I just wanted to make a to-do list bro how did they even manage to make a text editor lag on modern hardware \ud83e\udd26",
+      "author": "@viscep5393",
+      "url": "https://www.youtube.com/watch?v=W-30U5OQfms&lc=UgyOa-NIUusXUqWtNCR4AaABAg#7e60c75a",
+      "source": "youtube"
+    },
+    {
+      "text": "If I need to, I can expose my vault to LLMs, I just don't want to send all my stuff to nobody knows who. For those who don't care, these tools might work out for a year or two, until new tools appear.",
+      "author": "@9ix1",
+      "url": "https://www.youtube.com/watch?v=FMt5eKl8fCw&lc=UgzNG6vBIIhPgZMnt394AaABAg#b0fe94e6",
+      "source": "youtube"
+    },
+    {
+      "text": "Part of note taking is the slow thoughtful reflection on ideas... Your methods have ruined your intuitive creativity ability by relying on AI. The brain works by pattern & linking.",
+      "author": "@BubbleGendut",
+      "url": "https://www.youtube.com/watch?v=FMt5eKl8fCw&lc=Ugw-MaysTadL12DqFsx4AaABAg#6e055331",
+      "source": "youtube"
+    }
+  ],
+  "failed_tools": [
+    "Notion",
+    "Evernote",
+    "Roam Research"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Obsidian",
+      "threat": "high"
+    },
+    {
+      "name": "Bear",
+      "threat": "medium"
+    }
+  ],
+  "db_gap_id": 285
+}

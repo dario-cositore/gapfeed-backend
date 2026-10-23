@@ -1,0 +1,30 @@
+{
+  "agent": "Alex Chen",
+  "role": "General Pain Signal Scout",
+  "vertical": "general",
+  "round": {
+    "sleep_between_rounds": 60,
+    "max_raw_signals_per_round": 1500,
+    "max_llm_calls_per_round": 15,
+    "max_round_minutes": 10
+  },
+  "enrichment": {
+    "min_confidence": 0.35,
+    "skip_llm_if_confidence_above": 0.7
+  },
+  "sources": {
+    "reddit": true,
+    "hackernews": true,
+    "rss": true,
+    "stackoverflow": true,
+    "devto": true,
+    "youtube": true,
+    "indiehackers": true
+  },
+  "llm": {
+    "model": "xiaomi/mimo-v2-flash",
+    "timeout": 120,
+    "temperature": 0.1,
+    "max_tokens": 10000
+  }
+}

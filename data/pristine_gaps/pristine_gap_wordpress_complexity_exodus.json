@@ -1,0 +1,56 @@
+{
+  "title": "WordPress's shift to Gutenberg and block editors has alienated non-technical users, sparking a massive exodus",
+  "slug": "wordpress-gutenberg-complexity-alienates-users",
+  "category": "complexity",
+  "signals": 47,
+  "heat_score": 83,
+  "description": "WordPress was originally loved for its simplicity, but the forced transition to the Gutenberg block editor and Full Site Editing (FSE) has completely overwhelmed 'hobbyist' web designers and small business owners. Users complain that basic publishing now requires a tech-savvy webmaster, and legacy portfolios are breaking under the weight of conflicting plugins (Elementor, Divi, ACF). The platform's attempt to compete with visual builders has paradoxically made it too complex for its core demographic.",
+  "the_opportunity": "Build a hyper-simplified, 'retro-style' CMS specifically designed for artists, writers, and hobbyists. Strip away all block editing, plugins, and complex visual builders. Provide a pure text-and-image publishing interface with 5 indestructible themes that literally cannot be broken by updates. Market it as 'The anti-Gutenberg CMS for people who just want to publish.'",
+  "the_gap": "WordPress is caught in an identity crisis: it's too complex for beginners but too bloated with legacy PHP for enterprise developers. This leaves a massive gap at the bottom of the market for a pure, un-opinionated publishing engine that doesn't force users to learn grid layouts or manage plugin security updates just to post a blog.",
+  "who_is_affected": [
+    "Hobbyist web designers and artists",
+    "Small business owners managing their own sites",
+    "Freelancers inheriting broken legacy WP portfolios"
+  ],
+  "substitutes": [
+    "Reverting to legacy 'Classic Editor' plugins (temporary fix)",
+    "Ghost (more newsletter-focused than general CMS)",
+    "Squarespace (high recurring costs)"
+  ],
+  "sample_quotes": [
+    {
+      "text": "Recently took over a portfolio of WP sites and it is a hot mess. Elementor here, Divi there... I have seen my predecessor launching an update... which broke the whole pieces. Is this a user-friendly system, if they are hiring a tech-savvy webmaster to handle even publishing? Really?",
+      "author": "@liszcgsedt",
+      "url": "https://www.youtube.com/watch?v=WfZHe8j5Ykk&lc=UgxtvsR0n4M6ofZUp7p4AaABAg.9qP61lwBwhSA4mydXk3mHh#d7f05316",
+      "source": "youtube"
+    },
+    {
+      "text": "I am working for years now only on my own wordpress site to present my artwork. wordpress was always nice and easy to use, but then came some new editor, blocks and gutenberg and what ever, and i must say since then i hate wordpress. these stupid blocks drive me crazy.",
+      "author": "@kiesbett",
+      "url": "https://www.youtube.com/watch?v=aj1a-ifJ2nM&lc=UgxuVck3_ZeAMCH4Pdt4AaABAg#6be90159",
+      "source": "youtube"
+    },
+    {
+      "text": "I'm not a techy but not an idiot either and I can't stand wordpress. Maybe it's fine for a techy or someone who doesn't mind spending hours with tutorials... but if you want to spend minimal time on learning curve it sucks.",
+      "author": "@NurseHeretic",
+      "url": "https://www.youtube.com/watch?v=QYrzUsoVHQ4&lc=UgxQEyz_DO_Oyc1KZuZ4AaABAg.9zeEi6BfHlBA4U_OyB7U8Z#7e46cc89",
+      "source": "youtube"
+    }
+  ],
+  "failed_tools": [
+    "WordPress Gutenberg",
+    "Elementor & Divi",
+    "WordPress Full Site Editing (FSE)"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Ghost",
+      "threat": "medium"
+    },
+    {
+      "name": "Substack",
+      "threat": "low"
+    }
+  ],
+  "db_gap_id": 317
+}

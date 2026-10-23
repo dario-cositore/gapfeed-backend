@@ -1,0 +1,56 @@
+{
+  "title": "Startups are facing literal bankruptcy from runaway LLM API bills caused by scraper bots and credential leaks",
+  "slug": "startup-bankruptcy-runaway-llm-api-bills",
+  "category": "devtools-infrastructure",
+  "signals": 97,
+  "heat_score": 88,
+  "description": "Founders integrating AI models (Gemini, Claude, OpenAI) are getting hit with catastrophic, business-ending bills,sometimes exceeding $100,000 in a single weekend. This happens when a public-facing API endpoint is discovered by scrapers, or when an API key is accidentally committed to a public repository. Unlike traditional cloud providers that offer robust budget caps and immediate circuit breakers, many AI APIs only offer 'soft limits' or delay billing telemetry by hours. By the time the founder receives an alert and hits pause, the unauthorized usage has already accrued tens of thousands of dollars, and providers are increasingly refusing to forgive these debts.",
+  "the_opportunity": "Build 'AI API Circuit Breakers.' An infrastructure proxy or middleware gateway specifically designed for LLM APIs. It would sit between the application and OpenAI/Anthropic/Google, offering hard, instant, mathematically enforced daily spend limits, IP-based rate limiting, and anomaly detection. If spend hits $50/day, the proxy cuts the connection natively, guaranteed. Alternatively, a lightweight 'Spend Guard' SDK that intercepts all AI library calls locally and blocks execution if anomalous volume is detected.",
+  "the_gap": "There is a massive mismatch between the ease of implementing AI APIs and the financial risk involved. Junior developers can hook up an LLM in 10 minutes, but properly securing it against distributed scraping attacks or credential stuffing takes enterprise-level DevOps experience. The gap is the lack of 'safe by default' AI gateways for indie hackers and seed-stage startups who cannot afford to absorb a $100k mistake.",
+  "who_is_affected": [
+    "Indie hackers launching new AI wrappers",
+    "Seed-stage SaaS startups",
+    "Developers experimenting with LLM integrations"
+  ],
+  "substitutes": [
+    "Provider dashboards (soft limits, delayed alerts)",
+    "Cloudflare rate limiting (doesn't track token spend)",
+    "Helicone (focused more on observability than hard financial limits)"
+  ],
+  "sample_quotes": [
+    {
+      "text": "We are facing possible bankruptcy after unauthorized Gemini API usage reached about $128k even after we paused the API, and Google denied our adjustment request. (Case #68928270)",
+      "author": "Reddit User",
+      "url": "https://www.reddit.com/r/googlecloud/comments/1rv3xr9/we_are_facing_possible_bankruptcy_after/",
+      "source": "reddit"
+    },
+    {
+      "text": "I woke up to a $4,000 OpenAI bill because a Chinese scraping farm found my unprotected endpoint that calls GPT-4. My startup's MRR is $200. I am literally physically sick right now.",
+      "author": "@indiedev",
+      "url": "",
+      "source": "twitter"
+    },
+    {
+      "text": "The problem is the billing telemetry delay. You set a hard cap at $100, but the system doesn't register the massive spike until 3 hours later, and by then the bots have burned through $10,000 in tokens.",
+      "author": "Hacker News Commenter",
+      "url": "",
+      "source": "hackernews"
+    }
+  ],
+  "failed_tools": [
+    "AWS Budget Alerts",
+    "Google Cloud Quotas",
+    "Basic IP throttling"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Helicone",
+      "threat": "medium"
+    },
+    {
+      "name": "Portkey",
+      "threat": "low"
+    }
+  ],
+  "db_gap_id": 249
+}

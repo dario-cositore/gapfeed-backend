@@ -1,0 +1,26 @@
+{
+  "date": "2026-03-27",
+  "gaps_aggregated": 1,
+  "top_searches": [
+    {
+      "query": "test query from python",
+      "cnt": 1
+    }
+  ],
+  "zero_result_searches": [
+    {
+      "query": "test query from python",
+      "cnt": 1
+    }
+  ],
+  "session_metrics": {
+    "total_visitors": 2,
+    "total_pageviews": 3
+  },
+  "trending_gaps": [
+    {
+      "page_path": "/test",
+      "views": 2
+    }
+  ]
+}

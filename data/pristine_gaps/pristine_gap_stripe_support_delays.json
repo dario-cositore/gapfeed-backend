@@ -1,0 +1,56 @@
+{
+  "title": "High-risk merchants face 3-week support delays with Stripe and LemonSqueezy, leaving funds inaccessible",
+  "slug": "stripe-lemonsqueezy-support-delays-funds-inaccessible",
+  "category": "support",
+  "signals": 94,
+  "heat_score": 88,
+  "description": "Merchants using major payment aggregators like Stripe and LemonSqueezy are experiencing catastrophic support delays, often waiting over 3 weeks just to get a human response. Simple issues like updating a registered email address or saving customer card details result in immediate fund freezes. Because these platforms heavily rely on automated ticketing and lack dedicated phone support, businesses are left completely paralyzed without access to their own working capital.",
+  "the_opportunity": "As Stripe shifts further toward automated, self-serve support, high-risk and high-velocity merchants are increasingly desperate for third-party advocacy layers that can bypass generic ticketing queues. The market opportunity exists in an 'AI-enabled concierge' that manages, tracks, and forces priority resolution on Stripe-related disputes for SMEs.",
+  "the_gap": "Payment aggregators prioritize onboarding speed over merchant stability, leaving a massive support gap when edge cases arise. Businesses assume they are partnering with a bank, but realize too late they are dealing with a software company that offers zero direct accountability. This creates an immediate need for premium, specialized dispute management services.",
+  "who_is_affected": [
+    "High-velocity e-commerce merchants",
+    "Digital product creators and SaaS founders",
+    "Small businesses caught in automated compliance loops"
+  ],
+  "substitutes": [
+    "Switching to traditional merchant accounts (high friction)",
+    "Opening secondary backup Stripe accounts",
+    "Pestering executives on Twitter for support"
+  ],
+  "sample_quotes": [
+    {
+      "text": "I used Lemonsqueezy, have never regretted a decision more. Their support is basically non existent taking 3+ weeks to answer tickets that are related to not receiving your payment or customers not being able to do basic things like have their new card details actually save.",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=zM9k0WI1FrM&lc=UgyrmyN4himv0VOkcvp4AaABAg#2948b452",
+      "source": "youtube"
+    },
+    {
+      "text": "We have a with Stripe. Due to an error with our registered email address, we have experienced significant delays in receiving assistance. Currently, we have received payments that we are unable to access, and the funds are being held. Any advice?",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=XSMfwiZBOvs&lc=Ugxt0F8nAMwkW1pTUZJ4AaABAg#4dc1cffe",
+      "source": "youtube"
+    },
+    {
+      "text": "Stripe, what a joke. No support at all, no phone number if you have a quick question. No, instead you need to open up an account... Is ridiculous and disgusting, how customers get treated. No proper answer and no email address you can get in touch with stripe. They are worse then Apple and Google.",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=XSMfwiZBOvs&lc=UgxA3-O7BzcdbcQgcrB4AaABAg#e2a00f37",
+      "source": "youtube"
+    }
+  ],
+  "failed_tools": [
+    "Stripe Standard Support",
+    "LemonSqueezy Email Tickets",
+    "Automated chatbots"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Traditional Merchant Accounts",
+      "threat": "medium"
+    },
+    {
+      "name": "Paddle",
+      "threat": "low"
+    }
+  ],
+  "db_gap_id": 272
+}

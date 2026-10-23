@@ -1,0 +1,46 @@
+{
+  "agent": "Jack Morgan",
+  "role": "High-Volume API Scout",
+  "vertical": "general",
+  "agent_id": "jack_morgan",
+  "round": {
+    "sleep_between_rounds": 5,
+    "max_raw_signals_per_round": 5000,
+    "max_llm_calls_per_round": 0,
+    "max_round_minutes": 5
+  },
+  "enrichment": {
+    "min_confidence": 0.2,
+    "skip_llm": true
+  },
+  "scout": {
+    "reddit_subs": 15,
+    "devto_tags": 2,
+    "so_tags": 1,
+    "github_searches": 2,
+    "rss_categories": 2
+  },
+  "sources": {
+    "reddit": true,
+    "hackernews": true,
+    "devto": true,
+    "stackoverflow": true,
+    "github": true,
+    "rss": true
+  },
+  "llm": {
+    "model": "xiaomi/mimo-v2-flash",
+    "timeout": 120,
+    "temperature": 0.1,
+    "max_tokens": 10000
+  },
+  "memory": {
+    "review_interval": 50,
+    "journal_max_lines": 500
+  },
+  "paths": {
+    "memory_dir": "memory",
+    "state_dir": "state",
+    "logs_dir": "logs"
+  }
+}

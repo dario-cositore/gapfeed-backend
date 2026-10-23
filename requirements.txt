@@ -1,0 +1,6 @@
+Flask==3.1.1
+requests==2.32.3
+gunicorn==23.0.0
+# openrouter client uses openai-python
+openai==1.1.1
+# optional: waitress for Windows dev; production uses gunicorn

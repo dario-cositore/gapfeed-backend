@@ -1,0 +1,56 @@
+{
+  "title": "Webflow's US-centric pricing is completely pricing out international designers and small agencies",
+  "slug": "webflow-pricing-international-designers-agencies",
+  "category": "pricing",
+  "signals": 71,
+  "heat_score": 84,
+  "description": "Webflow has established itself as the premium visual website builder, but its pricing model has aggressively alienated users outside of the US and EU. Designers in LATAM, Asia, and Africa find the monthly subscription fees unworkable relative to local client budgets. As Webflow shifts focus to enterprise clients, international freelancers are actively migrating to competitors that offer Purchasing Power Parity (PPP) pricing or significantly cheaper flat-rate models.",
+  "the_opportunity": "Build a visual CSS builder that natively exports clean, un-obfuscated code, priced with aggressive Purchasing Power Parity (PPP). Alternatively, build a lightweight Framer-to-HTML exporter that lets international designers use Framer for the visual design but host it cheaply on their own static servers without paying recurring monthly site-plan fees.",
+  "the_gap": "SaaS pricing is notoriously rigid across geographic borders. The gap exists because top-tier design tools refuse to localize their pricing, creating a massive barrier to entry for the global south. Any builder that offers 90% of Webflow's functionality at 30% of the cost (via localized pricing) will immediately capture the international freelance market.",
+  "who_is_affected": [
+    "Freelance web designers outside the US/EU",
+    "Small digital agencies in developing markets",
+    "Solo founders bootstrapping MVPs"
+  ],
+  "substitutes": [
+    "WordPress + Elementor (bloated and slow)",
+    "Framer (still expensive but offers some regional pricing)",
+    "Writing CSS manually (time-consuming)"
+  ],
+  "sample_quotes": [
+    {
+      "text": "Webflow pricing is bad, for people outside US for example it's super expensive, on the other hand you have Framer doing special prices for different countries, and a better model...",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=lhTuoWUadKY&lc=UgzS5rq_mh6o3s_xPjl4AaABAg#f286d5b7",
+      "source": "youtube"
+    },
+    {
+      "text": "And now with figma sites and make, it's just not a great future for webflow, they seem just another tool on the market (and that happen to all the giant ones, squarespace for example also doesn't make sense, in pricing and what delivers)",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=lhTuoWUadKY&lc=UgzS5rq_mh6o3s_xPjl4AaABAg#f286d5b7",
+      "source": "youtube"
+    },
+    {
+      "text": "If I have a Webflow site and they decides for whatever reason to charge me x5 more or even delete my entire website, I can't do anything.. but on WordPress I own the whole thing! But yeah WF has a better builder.",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=aj1a-ifJ2nM&lc=Ugy2N55kuVoOb9Sqxkd4AaABAg#6a834af0",
+      "source": "youtube"
+    }
+  ],
+  "failed_tools": [
+    "Webflow Site Plans",
+    "Squarespace",
+    "Wix"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Framer",
+      "threat": "high"
+    },
+    {
+      "name": "WordPress (Gutenberg)",
+      "threat": "medium"
+    }
+  ],
+  "db_gap_id": 2108
+}

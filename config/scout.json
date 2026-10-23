@@ -1,0 +1,24 @@
+{
+  "rate_limits": {
+    "reddit": {
+      "requests_per_minute": 60,
+      "base_delay": 1.0
+    },
+    "youtube": {
+      "requests_per_minute": 100,
+      "base_delay": 0.6
+    },
+    "web": {
+      "requests_per_minute": 30,
+      "base_delay": 2.0
+    }
+  },
+  "max_retries": 3,
+  "backoff_factor": 2.0,
+  "scan_interval_seconds": 300,
+  "sources_enabled": ["reddit"],
+  "categories_rotation": true,
+  "max_signals_per_cycle": 500,
+  "health_check_interval": 600,
+  "log_level": "INFO"
+}

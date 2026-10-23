@@ -1,0 +1,56 @@
+{
+  "title": "BigCommerce is losing merchants due to dated features, broken POS integrations, and lack of third-party app support",
+  "slug": "bigcommerce-stagnation-broken-pos-integrations",
+  "category": "ecommerce-retail",
+  "signals": 84,
+  "heat_score": 82,
+  "description": "Merchants on BigCommerce are increasingly frustrated by the platform's lack of innovation compared to Shopify. Users report that essential features require expensive apps, half of which fail to work properly. Crucially, the platform struggles to interface with physical brick-and-mortar POS systems, even after merchants pay hundreds of dollars for integration apps. Developers note that BigCommerce versions of popular apps are often stripped down because the platform lacks the underlying APIs to support modern e-commerce functionality.",
+  "the_opportunity": "Build a middleware integration layer specifically for BigCommerce that flawlessly connects legacy POS systems to the web storefront. Alternatively, there is a clear opening for a new e-commerce platform targeting the mid-market that offers native, first-party POS integration without relying on a brittle ecosystem of expensive third-party apps.",
+  "the_gap": "While Shopify has captured the app developer ecosystem, BigCommerce users are left with an 'app desert' where extensions are either abandoned, overly expensive, or functionally inferior. Merchants feel trapped on a dated platform, paying Shopify-tier prices for a 2015-era experience, especially when trying to bridge their online sales with their physical retail footprint.",
+  "who_is_affected": [
+    "Mid-market ecommerce merchants",
+    "Omnichannel retailers with brick-and-mortar stores",
+    "Store managers struggling with inventory sync"
+  ],
+  "substitutes": [
+    "Shopify (costly migration)",
+    "WooCommerce (requires heavy dev resources)",
+    "Magento (complex infrastructure)"
+  ],
+  "sample_quotes": [
+    {
+      "text": "My employer uses BigCommerce and I HATE it. Its features are rather shitty and dated, and everything you might want to do requires expensive apps, half of which don't work. It doesn't interface with our brick and mortar store's POS system, even when we paid hundreds of dollars for an app.",
+      "author": "@BDThomas",
+      "url": "https://www.youtube.com/watch?v=ST06W0KdLYU&lc=UgwRMD9_B8G7dXvcIgB4AaABAg#5475a302",
+      "source": "youtube"
+    },
+    {
+      "text": "Themes are just as expensive as Shopify, and there's very little in the way of mobile optimization... One theme developer I talked to said, 'We'd have that and a lot of other cool things if BigCommerce would catch up with the industry.'",
+      "author": "@BDThomas",
+      "url": "https://www.youtube.com/watch?v=ST06W0KdLYU&lc=UgwRMD9_B8G7dXvcIgB4AaABAg#5475a302",
+      "source": "youtube"
+    },
+    {
+      "text": "Just about every popular app out there is optimized for Shopify, and their BigCommerce versions are stripped down and lacking features because, according to three different developers, BigCommerce just doesn't support shit.",
+      "author": "@BDThomas",
+      "url": "https://www.youtube.com/watch?v=ST06W0KdLYU&lc=UgwRMD9_B8G7dXvcIgB4AaABAg#5475a302",
+      "source": "youtube"
+    }
+  ],
+  "failed_tools": [
+    "BigCommerce native POS",
+    "Third-party integration apps",
+    "Dated premium themes"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Shopify POS",
+      "threat": "high"
+    },
+    {
+      "name": "Lightspeed",
+      "threat": "medium"
+    }
+  ],
+  "db_gap_id": 537
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Small businesses are fleeing QuickBooks due to aggressive subscription pricing and hidden feature removals",
+  "slug": "small-business-fleeing-quickbooks-pricing-hikes",
+  "category": "pricing",
+  "signals": 124,
+  "heat_score": 95,
+  "description": "Intuit has begun aggressively pushing QuickBooks Desktop users onto their cloud subscription model (QBO) while simultaneously raising prices every 3 to 6 months. To make matters worse, core functionality like detailed P&L tagging is being removed from lower tiers and gated behind more expensive enterprise plans. SMBs feel extorted, complaining that the software hasn't innovated in years, customer support has been entirely offshored, and they are paying 3x more for the exact same accounting features they had a decade ago.",
+  "the_opportunity": "Build a hyper-focused, local-first or one-time-fee accounting software specifically for service businesses and contractors. Market it directly against Intuit as 'the last accounting software you will ever buy.' No subscriptions, no cloud syncing unless requested, and built-in migration tools to import raw QBO exports instantly. Alternatively, build a middleware tool that syncs Stripe/bank data into simple Excel/Google Sheets templates, completely bypassing the need for dedicated accounting SaaS.",
+  "the_gap": "Accounting is a static task for most small businesses,money goes in, money goes out, taxes are paid. It does not require continuous 'SaaS innovation,' yet the entire industry has moved to a high-ARPU subscription model. There is a massive, highly motivated segment of the market desperate to churn from QuickBooks but lacking a viable, non-subscription alternative that doesn't feel like a step backward into the 1990s.",
+  "who_is_affected": [
+    "Freelancers and contractors",
+    "Mom-and-pop retail businesses",
+    "Accountants managing clients who refuse to upgrade"
+  ],
+  "substitutes": [
+    "Xero (often lacks phone support in the US)",
+    "Wave (seen as too basic)",
+    "Spreadsheets (error-prone at scale)"
+  ],
+  "sample_quotes": [
+    {
+      "text": "QBO is the biggest rip off corporation in America. They raise their pricing every 3-6 months and I have never used 1 new feature. I'm done with the crap service and price hikes.",
+      "author": "@roma_nova83",
+      "url": "https://www.youtube.com/watch?v=dizuDlq4LC4&lc=Ugw8DLih4bcOETYbQOZ4AaABAg#b52010b8",
+      "source": "youtube"
+    },
+    {
+      "text": "QuickBooks hasn't created any ground breaking innovations for years. They use offshore agents for sales and support... Then they extort long standing clients by forcing them into a subscription... It's legalized theft.",
+      "author": "@BRad02424",
+      "url": "https://www.youtube.com/watch?v=dizuDlq4LC4&lc=UgxaZFT2B_YtpQR3t5F4AaABAg#ccc1a6dc",
+      "source": "youtube"
+    },
+    {
+      "text": "QBO is way too expensive and just took our capability to tag and run a p&l on those tags away. I'm fed up with QBOs constant removal of features and rearranging things. Tired of reteach my Dad and his team how to use the software.",
+      "author": "@91swags",
+      "url": "https://www.youtube.com/watch?v=dizuDlq4LC4&lc=UgyHJYO8ni0zf8VT5sV4AaABAg.AIWJ42BrycAAJ1PPM7Blc9#da010af6",
+      "source": "youtube"
+    }
+  ],
+  "failed_tools": [
+    "QuickBooks Desktop (discontinued)",
+    "QuickBooks Online",
+    "FreshBooks"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Xero",
+      "threat": "high"
+    },
+    {
+      "name": "Wave",
+      "threat": "medium"
+    }
+  ],
+  "db_gap_id": 271
+}

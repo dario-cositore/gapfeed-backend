@@ -1,0 +1,58 @@
+{
+  "sources": {
+    "reddit": {
+      "enabled": true,
+      "rate_limit": 60,
+      "subreddits": {
+        "general": ["BuyItForLife", "productreviews", "shutupandtakemymoney"],
+        "kitchenware": ["Cooking", "KitchenConfidential", "castiron", "Coffee", "tea"],
+        "pet_products": ["dogs", "cats", "pets", "dogtraining", "Puppy101"],
+        "tech": ["Android", "iphone", "gadgets", "hardware", "mechanicalkeyboards"],
+        "fitness": ["fitness", "homegym", "running", "yoga"],
+        "baby": ["beyondthebump", "newparents", "babyledweaning"],
+        "outdoor": ["camping", "CampingGear", "hiking", "ultralight"],
+        "home": ["HomeImprovement", "organization", "declutter"]
+      }
+    },
+    "immigration": {
+      "enabled": true,
+      "rate_limit": 60,
+      "subreddits": {
+        "immigration_general": ["immigration", "USCIS", "immigrationlaw"],
+        "us_visas": ["h1b", "f1visa", "j1visa"],
+        "expats": ["expats", "IWantOut"],
+        "country_specific": ["ImmigrationCanada", "ukvisa", "AusVisa"],
+        "legal": ["legaladvice", "AskALawyer"],
+        "community": ["VisaJourney", "Dreamers", "DACA"]
+      },
+      "visa_types": {
+        "h1b": ["h1b", "h-1b", "h1-b", "specialty occupation", "lottery", "cap"],
+        "eb": ["eb-1", "eb-2", "eb-3", "eb1", "eb2", "eb3", "employment based", "green card", "i-140", "i140", "perm", "labor certification"],
+        "opt": ["opt", "optional practical training", "stem opt", "ead", "ead card", "ead renewal"],
+        "f1": ["f-1", "f1", "student visa", "f1 student", "cpt", "curricular practical training"],
+        "k1": ["k-1", "k1", "fiance visa", "fiancee visa", "fiancé"],
+        "b1b2": ["b-1", "b-2", "b1", "b2", "tourist visa", "visitor visa", "business visa"],
+        "asylum": ["asylum", "asylum seeker", "refugee", "withholding of removal", "cat"],
+        "daca": ["daca", "deferred action", "daca renewal"],
+        "family": ["i-130", "i130", "family petition", "family based", "immediate relative", "f2a", "f2b", "f3", "f4"],
+        "l1": ["l-1", "l1", "intracompany", "l1a", "l1b"],
+        "o1": ["o-1", "o1", "extraordinary ability"],
+        "tn": ["tn visa", "tn status", "nafta", "usmca"],
+        "i485": ["i-485", "i485", "adjustment of status", "aos", "ead combo card"],
+        "n400": ["n-400", "n400", "naturalization", "citizenship", "citizenship test"],
+        "deportation": ["deportation", "removal proceedings", "ice", "detention", "nta", "notice to appear"]
+      },
+      "urgency_signals": {
+        "critical": ["deportation", "removal", "detained", "detention", "expired yesterday", "expired today", "out of status", "unlawful presence", "denied and", "final order"],
+        "high": ["expiring soon", "expiring next month", "about to expire", "rfe", "request for evidence", "received rfe", "denied", "rejection", "rejected"],
+        "medium": ["pending", "stuck", "no update", "processing", "waiting", "delayed", "taking forever", "still waiting", "case received"],
+        "low": ["thinking about", "planning to", "considering", "researching", "curious", "general question"]
+      }
+    },
+    "youtube": {
+      "enabled": false,
+      "api_key_env": "YOUTUBE_API_KEY",
+      "max_results_per_query": 5
+    }
+  }
+}

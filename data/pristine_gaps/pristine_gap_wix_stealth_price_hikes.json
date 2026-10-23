@@ -1,0 +1,56 @@
+{
+  "title": "Wix's stealth price hikes and bot-only support are driving small businesses to churn",
+  "slug": "wix-stealth-price-hikes-bot-only-support",
+  "category": "pricing",
+  "signals": 65,
+  "heat_score": 83,
+  "description": "Small business owners and non-technical founders are fleeing Wix due to unannounced subscription price increases and a total inability to reach human support for refunds. Users are trapped in infinite loops with AI chatbots that fail to address financial hardship or billing errors. The platform's reputation is tanking among its core demographic, who feel the company has prioritized extracting maximum recurring revenue over maintaining fair, transparent business practices.",
+  "the_opportunity": "The shift toward 'micro-SaaS' and solopreneurship makes price-sensitive users prioritize long-term, fixed-cost predictability over ecosystem lock-in. Capturing this market requires a 'no-surprises' billing model, as the current dissatisfaction with Wix underscores a massive opening for an engine with modular, transparent, and flat-fee pricing.",
+  "the_gap": "Website builders have fully adopted the 'cable company' model: cheap introductory rates followed by relentless, silent price hikes. There is a lucrative gap for a visually intuitive website builder that guarantees a lifetime price lock or offers a one-time perpetual license, specifically targeting users burned by aggressive SaaS billing tactics.",
+  "who_is_affected": [
+    "Small local business owners",
+    "Independent creators and artists",
+    "Non-technical solopreneurs"
+  ],
+  "substitutes": [
+    "WordPress (steep learning curve)",
+    "Squarespace (similar pricing issues)",
+    "Carrd or basic Notion pages"
+  ],
+  "sample_quotes": [
+    {
+      "text": "because they put their prices up without informing you and you cannot speak to anyone only an annoying bot which takes you round in circles, BAD SERVICE.",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=k0fuI0PzIp4&lc=UgxhBMyb5X-HUNUMc7J4AaABAg#ef1ca518",
+      "source": "youtube"
+    },
+    {
+      "text": "It is extremely disappointing that it is even so difficult to request a refund and get on a call with a human. It is even more sickening to get what reads like an AI generated message from a bot not addressing any of the points about financial hardship... In the grand scheme of things Wix loses nothing refunding this subscription service and It impacts someone greatly.",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=yRl1Jpdkb7M&lc=UgzsaneInPBbzdXym5N4AaABAg#98cb6a6a",
+      "source": "youtube"
+    },
+    {
+      "text": "Wix not kinda expensive, SUPER EXPENSIVE. I'm quitting them this month",
+      "author": "YouTube User",
+      "url": "https://www.youtube.com/watch?v=yRl1Jpdkb7M&lc=UgweHUfnh80uel1MJLB4AaABAg#c28530a7",
+      "source": "youtube"
+    }
+  ],
+  "failed_tools": [
+    "Wix Premium Plans",
+    "Wix Automated Support Bot",
+    "Squarespace"
+  ],
+  "existing_solutions": [
+    {
+      "name": "WordPress + Elementor",
+      "threat": "high"
+    },
+    {
+      "name": "Webflow",
+      "threat": "medium"
+    }
+  ],
+  "db_gap_id": 277
+}

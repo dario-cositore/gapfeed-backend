@@ -1,0 +1,56 @@
+{
+  "title": "GoDaddy's aggressive auto-renewals and hidden premium domain revocations feel like 'legalized theft' to small business owners",
+  "slug": "godaddy-auto-renewal-hostage-pricing-premium-domains",
+  "category": "pricing",
+  "signals": 54,
+  "heat_score": 81,
+  "description": "Domain registrars, particularly GoDaddy, are increasingly utilizing dark patterns to extract revenue from small business owners. Users report having premium domains 'revoked and refunded' weeks after purchasing and printing marketing materials, only to be told they must now pay a 'broker fee' to buy it back. Furthermore, turning off auto-renew or deleting payment methods often fails to stop unauthorized recurring charges. The trust in incumbent registrars has completely eroded, leaving users feeling extorted.",
+  "the_opportunity": "Build a hyper-transparent, 'dumb' domain registrar that fundamentally refuses to offer auto-renewals, broker fees, or upsells. A Y-Combinator style startup that guarantees flat $12/year pricing for .com domains forever, with a one-click 'Delete My Data' button. Market it entirely on the premise of 'We just sell domains, we don't try to steal them back.'",
+  "the_gap": "The domain registration market has shifted from a utility service to an aggressive fintech extraction model. The gap exists because while tech-savvy users migrate to Cloudflare or Namecheap, non-technical small business owners are trapped in predatory ecosystems. They desperately need a consumer-friendly registrar that doesn't weaponize their lack of technical knowledge.",
+  "who_is_affected": [
+    "Small business owners buying their first domain",
+    "Non-technical founders",
+    "Agencies managing client portfolios"
+  ],
+  "substitutes": [
+    "Namecheap (still has upsells)",
+    "Cloudflare Registrar (requires technical DNS knowledge)",
+    "Google Domains (discontinued)"
+  ],
+  "sample_quotes": [
+    {
+      "text": "I bought a premium domain for 50USD with GoDaddy... I made changes in thousand of bags with the new domain. AND THEY TOOK MY DOMAIN BACK, GAVE IT TO THE PREVIOUS OWNER, and refund my money!!! I don't care about the 50USD! I've spent more changing the bags!!! And now the website market the domain on sale... BUT NOW I NEED TO PAY A FEE FOR AN AGENT.",
+      "author": "@RobertShield62",
+      "url": "https://www.youtube.com/watch?v=2gvBgz0-69I&lc=UgymXEqkNP0bL15oftV4AaABAg#0ddffddb",
+      "source": "youtube"
+    },
+    {
+      "text": "Godaddy is a piece of flamin trash now. They will charge you and auto renew you even if you cancel all subscriptions and cancel all auto renewables.",
+      "author": "@doogyjay1",
+      "url": "https://www.youtube.com/watch?v=2gvBgz0-69I&lc=UgxdzEqRjPHn3Vy9sqN4AaABAg#c3310db8",
+      "source": "youtube"
+    },
+    {
+      "text": "Godaddy steals cheats and lies. Godaddy advertises cancelled promotions for domain names less than $5, but at checkout, the bill is $25+. Thats cheating lying and tricking.",
+      "author": "@robertweiss7456",
+      "url": "https://www.youtube.com/watch?v=uHnXvEI-tSU&lc=UgytRqw6oZetRskmS8l4AaABAg#14a4d41d",
+      "source": "youtube"
+    }
+  ],
+  "failed_tools": [
+    "GoDaddy Domain Broker",
+    "GoDaddy Auto-Renew",
+    "Network Solutions"
+  ],
+  "existing_solutions": [
+    {
+      "name": "Cloudflare Registrar",
+      "threat": "high"
+    },
+    {
+      "name": "Porkbun",
+      "threat": "medium"
+    }
+  ],
+  "db_gap_id": 282
+}
