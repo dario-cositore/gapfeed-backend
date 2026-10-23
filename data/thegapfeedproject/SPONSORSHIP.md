@@ -37,10 +37,10 @@ This is the startup loop of death. It breaks in one direction: someone with comp
 
 ### Currently
 
-- **Classifying new signals** — Every day, fresh Reddit comments, YouTube complaints, GitHub issues enter our pipeline. Each one gets verified for quality by Maya Patel.
-- **Scanning 12 sources** — Alex Chen monitors Reddit, HN, YouTube, GitHub, DDG, RSS, Stack Overflow, Dev.to, Google News, GitHub Issues/Discussions, and Product Hunt.
+- **Classifying new signals** — Every day, fresh Reddit comments, YouTube complaints, GitHub issues enter our pipeline. Each one gets verified for quality by Agent_6.
+- **Scanning 12 sources** — Agent_1 monitors Reddit, HN, YouTube, GitHub, DDG, RSS, Stack Overflow, Dev.to, Google News, GitHub Issues/Discussions, and Product Hunt.
 - **Enriching existing gaps** — Adding real quotes, refining pain scores, cleaning metadata.
-- **Social content generation** — Luna Hart generates and schedules content across X and LinkedIn.
+- **Social content generation** — Agent_5 generates and schedules content across X and LinkedIn.
 
 ### What We'll Build With It
 

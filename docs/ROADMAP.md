@@ -21,7 +21,7 @@ Every day we scan comments, reviews, and discussions across 16 sources. We clust
 
 ### The Technical Moat
 
-**1. Comment Hunter Pipeline (Jack Morgan)**
+**1. Comment Hunter Pipeline (Agent_2)**
 - 10 sources: Reddit comments, YouTube comments, HN threads, Dev.to, SO, Trustpilot reviews, Chrome Web Store reviews, G2, Capterra, blog comments
 - Every signal has a clickable permalink to the exact comment/review
 - DDG + Yandex search with automatic fallback
@@ -29,12 +29,12 @@ Every day we scan comments, reviews, and discussions across 16 sources. We clust
 - This is the "receipts" that nobody else has
 
 **2. Multi-Agent Intelligence (The Squad)**
-- Alex Chen: 12 API sources, legal, clean, the fallback
-- Jack Morgan: Comment hunter, volume play, stealth
-- Maya Patel: LLM classification with pain categories, urgency, buyer intent
+- Agent_1: 12 API sources, legal, clean, the fallback
+- Agent_2: Comment hunter, volume play, stealth
+- Agent_6: LLM classification with pain categories, urgency, buyer intent
 - Morgan Blake: Brief synthesizer (on-demand)
-- Sam Zhang: System monitor with Telegram alerts
-- Luna Hart: Content engine, social presence, blog
+- Agent_7: System monitor with Telegram alerts
+- Agent_5: Content engine, social presence, blog
 
 **3. Query Performance Ledger**
 - Tracks which queries produce the best signals
@@ -100,10 +100,10 @@ We're not an idea generator. We're not a feedback tool. We're a **pain discovery
 - LLM classification pipeline (Maya)
 - Gap clustering with competitor intelligence
 - Free public feed on gapfeed.com
-- Comment hunter pipeline (Jack Morgan)
+- Comment hunter pipeline (Agent_2)
 - Query performance ledger
 - Cross-source correlation
-- Social content engine (Luna Hart)
+- Social content engine (Agent_5)
 
 ### Phase 2: Polish & Quality (Q2 2026 - NOW)
 
@@ -113,7 +113,7 @@ We're not an idea generator. We're not a feedback tool. We're a **pain discovery
 - Reach 200+ high-quality gaps with balanced sentiment
 - Improve gap validity scoring
 - Finish data hygiene (staleness detection, archive)
-- Optimize Jack Morgan yield (verify 33k/day at scale)
+- Optimize Agent_2 yield (verify 33k/day at scale)
 - Review scraping at scale (Trustpilot, Chrome Store)
 
 **Visual Polish:**
@@ -125,7 +125,7 @@ We're not an idea generator. We're not a feedback tool. We're a **pain discovery
 
 **Growth:**
 - Launch Weekly Top Gaps newsletter (email signup, no login)
-- Luna Hart social content at scale (X threads, LinkedIn, blog)
+- Agent_5 social content at scale (X threads, LinkedIn, blog)
 - SEO hardening for "what should I build" keywords
 
 **Success Metrics:**

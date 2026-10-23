@@ -46,7 +46,7 @@ Most product feedback is scattered. Complaints live in Reddit threads, GitHub is
               |
 +-------------v-------------+
 |   Signal Ingestion     |
-|  Alex Chen             |
+|  Agent_1             |
 |  Scraper farms         |
 |  Rate limiters         |
 |  Dedup                 |
@@ -55,7 +55,7 @@ Most product feedback is scattered. Complaints live in Reddit threads, GitHub is
               |
 +-------------v-------------+
 |   Analysis Pipeline    |
-|  Maya Patel            |
+|  Agent_6            |
 |  LLM classification    |
 |  Gap detection         |
 +-------------^-------------+
@@ -71,11 +71,11 @@ Most product feedback is scattered. Complaints live in Reddit threads, GitHub is
 
 | Agent | Role | Model | Cycle |
 |-------|------|-------|-------|
-| **Alex Chen** | Scout, ingests from 12 sources | `mimo-v2.6-flash` | 1s |
-| **Maya Patel** | Classifier and gap detector | `mimo-v2.6-flash` | 30s |
-| **Sam Zhang** | System monitor and alerts | `mimo-v2.6-flash` | 5 min |
-| **Luna Hart** | Marketing, social, blog | `mimo-v2.6-flash` | 1 hour |
-| **Jamie Rivera** | Brief synthesizer, on demand | `mimo-v2.6-flash` | On demand |
+| **Agent_1** | Scout, ingests from 12 sources | `mimo-v2.6-flash` | 1s |
+| **Agent_6** | Classifier and gap detector | `mimo-v2.6-flash` | 30s |
+| **Agent_7** | System monitor and alerts | `mimo-v2.6-flash` | 5 min |
+| **Agent_5** | Marketing, social, blog | `mimo-v2.6-flash` | 1 hour |
+| **Agent_4** | Brief synthesizer, on demand | `mimo-v2.6-flash` | On demand |
 
 ### Key Components
 

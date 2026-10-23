@@ -41,8 +41,8 @@ Update this document whenever something changes. If it's not here, it doesn't ex
 <li>All 213 HTML files rebranded: GapFeed -&gt; GapFeed, gapfeed.com -&gt; gapfeed.com</li>
 <li>All agent configs updated to gapfeed.com</li>
 <li>Shared modules (<code>remote_db.py</code>, <code>llm_client.py</code>) updated</li>
-<li>Sam Zhang now monitors <code>gapfeed.com/api/db.php</code> instead of <code>gapfeed.com</code></li>
-<li>Luna Hart API endpoint updated to gapfeed.com</li>
+<li>Agent_7 now monitors <code>gapfeed.com/api/db.php</code> instead of <code>gapfeed.com</code></li>
+<li>Agent_5 API endpoint updated to gapfeed.com</li>
 <li>Sitemap, robots.txt, all canonical URLs updated</li>
 <li>Email: <code>hello@gapfeed.com</code> (privacy/terms pages)</li>
 <li>DNS: A record points to 217.160.0.71, MX via IONOS</li>
@@ -397,37 +397,37 @@ MySQL gaps.competitors (JSON field)
 </thead>
 <tbody>
 <tr>
-<td><strong>Maya Patel</strong></td>
+<td><strong>Agent_6</strong></td>
 <td><code>openai/gpt-oss-120b</code></td>
 <td>-</td>
 <td>50+ classifications/cycle, need 1k tok/s speed</td>
 </tr>
 <tr>
-<td><strong>Luna Hart</strong></td>
+<td><strong>Agent_5</strong></td>
 <td><code>deepseek/deepseek-v3.2</code></td>
 <td><code>xiaomi/mimo-v2-flash</code></td>
 <td>Creative writing, quality matters</td>
 </tr>
 <tr>
-<td><strong>Alex Chen</strong></td>
+<td><strong>Agent_1</strong></td>
 <td><code>xiaomi/mimo-v2-flash</code></td>
 <td>-</td>
 <td>Default, good enough for signal enrichment</td>
 </tr>
 <tr>
-<td><strong>Jack Morgan</strong></td>
+<td><strong>Agent_2</strong></td>
 <td><code>xiaomi/mimo-v2-flash</code></td>
 <td>-</td>
 <td>Default, same as Alex</td>
 </tr>
 <tr>
-<td><strong>Sam Zhang</strong></td>
+<td><strong>Agent_7</strong></td>
 <td><code>xiaomi/mimo-v2-flash</code></td>
 <td>-</td>
 <td>Default, health checks don't need premium</td>
 </tr>
 <tr>
-<td><strong>Jamie Rivera</strong></td>
+<td><strong>Agent_4</strong></td>
 <td><code>xiaomi/mimo-v2-flash</code></td>
 <td>-</td>
 <td>Default, on-demand briefs</td>
@@ -447,7 +447,7 @@ MySQL gaps.competitors (JSON field)
 </tbody>
 </table>
 <p><strong>Note:</strong> Maya uses a completely different model for speed. Luna uses a different model for quality. Everyone else shares the same default.</p>
-<h3 id="alex-chen-scout">Alex Chen - Scout</h3>
+<h3 id="alex-chen-scout">Agent_1 - Scout</h3>
 <ul>
 <li><strong>Role:</strong> Discovers pain signals from 12 sources in parallel</li>
 <li><strong>Model:</strong> <code>xiaomi/mimo-v2-flash</code></li>
@@ -465,7 +465,7 @@ MySQL gaps.competitors (JSON field)
 5. <strong>Stack Overflow</strong> - searches for frustration patterns, tag rotation
 6. <strong>Dev.to</strong> - searches developer blog posts for pain signals
 7. <strong>YouTube</strong> - quota-managed (8k/10k daily limit), 3 queries/cycle, auto-stop at quota
-8. <strong>Indie Hackers</strong> - browser adapter via Jack Morgan (Playwright), homepage/forum/products
+8. <strong>Indie Hackers</strong> - browser adapter via Agent_2 (Playwright), homepage/forum/products
 9. <strong>GitHub Issues</strong> - 58 pain queries, GitHub API with token auth
 10. <strong>Google News</strong> - RSS feeds, 52 pain queries, free
 11. <strong>GitHub Discussions</strong> - GraphQL API, 42 pain queries
@@ -514,7 +514,7 @@ MySQL gaps.competitors (JSON field)
 - Query performance ledger with decay (30-day half-life)
 - Dynamic query generation from trending topics
 - Cross-source correlation amplifier</p>
-<h3 id="maya-patel-classifier-gap-detector">Maya Patel - Classifier + Gap Detector</h3>
+<h3 id="maya-patel-classifier-gap-detector">Agent_6 - Classifier + Gap Detector</h3>
 <ul>
 <li><strong>Role:</strong> Classifies raw signals and detects market gaps</li>
 <li><strong>Model:</strong> <code>openai/gpt-oss-120b</code> (switched from xiaomi/mimo-v2-flash for better score distribution)</li>
@@ -570,7 +570,7 @@ MySQL gaps.competitors (JSON field)
 - Page Generator runs after gap detection (generates static HTML, sitemap, deploys to IONOS)
 - No external API calls (DDG removed from pipeline)</p>
 <p><strong>Known Issue (FIXED):</strong> LLM was scoring all signals as urgency=1.0, sentiment=negative. Fixed with few-shot examples. Current distribution: urgency avg 0.42 (range 0.1-0.9), sentiment 74% negative / 24% neutral / 2% positive. Two PHP bugs also fixed: empty(0) is_processed filter, Maya reprocessing loop.</p>
-<h3 id="jamie-rivera-brief-synthesizer">Jamie Rivera - Brief Synthesizer</h3>
+<h3 id="jamie-rivera-brief-synthesizer">Agent_4 - Brief Synthesizer</h3>
 <ul>
 <li><strong>Role:</strong> Generates analytical briefs on demand</li>
 <li><strong>Model:</strong> Configurable (typically <code>xiaomi/mimo-v2-flash</code>)</li>
@@ -587,7 +587,7 @@ MySQL gaps.competitors (JSON field)
 5. Generate summary (LLM)
 6. Return structured brief with signal_count, quotes, categories</p>
 <p><strong>Usage:</strong> <code>python orchestrator.py "search query" --vertical general --no-llm</code></p>
-<h3 id="sam-zhang-system-monitor">Sam Zhang - System Monitor</h3>
+<h3 id="sam-zhang-system-monitor">Agent_7 - System Monitor</h3>
 <ul>
 <li><strong>Role:</strong> Health checks, diagnostics, and alerts</li>
 <li><strong>Model:</strong> <code>xiaomi/mimo-v2-flash</code> (switched from gpt-oss-120b for consistency)</li>
@@ -597,7 +597,7 @@ MySQL gaps.competitors (JSON field)
 <pre><code>CHECK_AGENTS → CHECK_SERVER → CHECK_DB → CHECK_SYSTEM → DIAGNOSE → REPORT → NOTIFY → SLEEP
 </code></pre>
 <p><strong>Monitors:</strong>
-1. <strong>Agents</strong> - checks if Alex Chen and Maya Patel are running (log freshness within 15 min)
+1. <strong>Agents</strong> - checks if Agent_1 and Agent_6 are running (log freshness within 15 min)
 2. <strong>Server</strong> - pings <code>https://gapfeed.com/api/db.php?action=stats</code> with API key (15s timeout)
 3. <strong>Database</strong> - pings PHP API for connectivity
 4. <strong>System</strong> - disk space, process count</p>
@@ -610,7 +610,7 @@ MySQL gaps.competitors (JSON field)
 - Config: <code>config/base.json</code> -&gt; telegram section</p>
 <p><strong>LLM Diagnosis:</strong> When alerts fire, Sam uses LLM to analyze and suggest fixes. Provides root cause, fix recommendation, and urgency.</p>
 <p><strong>Reporting:</strong> Writes JSON reports to <code>memory/</code> and state to <code>state/</code>. Alerts logged as warnings.</p>
-<h3 id="jack-morgan-browser-scout-under-reconstruction">Jack Morgan - Browser Scout (UNDER RECONSTRUCTION)</h3>
+<h3 id="jack-morgan-browser-scout-under-reconstruction">Agent_2 - Browser Scout (UNDER RECONSTRUCTION)</h3>
 <ul>
 <li><strong>Role:</strong> Browser-based signal discovery (stealth Playwright)</li>
 <li><strong>Model:</strong> <code>xiaomi/mimo-v2-flash</code></li>
@@ -631,7 +631,7 @@ MySQL gaps.competitors (JSON field)
 - Jack = content deep-dive (visits URLs from Alex's signals)
 - Jack = niche site specialist (Product Hunt, Indie Hackers via browser)
 - Jack = LLM classifier (enriches Alex's raw signals)</p>
-<p><strong>Same state machine as Alex Chen</strong> but uses Playwright browser adapters instead of API adapters.</p>
+<p><strong>Same state machine as Agent_1</strong> but uses Playwright browser adapters instead of API adapters.</p>
 <p><strong>Browser Adapters (same sources as Alex, browser-rendered):</strong>
 - <code>browser_reddit_adapter.py</code> - navigates Reddit, scrolls, extracts posts
 - <code>browser_hn_adapter.py</code> - navigates HN, extracts stories
@@ -654,13 +654,13 @@ MySQL gaps.competitors (JSON field)
 - Some sources don't have clean APIs
 - Browser can access content behind JS rendering
 - Stealth techniques avoid basic bot detection</p>
-<h3 id="luna-hart-marketing-community-manager">Luna Hart - Marketing &amp; Community Manager</h3>
+<h3 id="luna-hart-marketing-community-manager">Agent_5 - Marketing &amp; Community Manager</h3>
 <ul>
 <li><strong>Role:</strong> Manages blog, social media, trend scouting, and community engagement</li>
 <li><strong>Model:</strong> <code>deepseek/deepseek-v3.2</code> (primary), <code>xiaomi/mimo-v2-flash</code> (fallback)</li>
 <li><strong>Cycle:</strong> 3600s (1 hour) between cycles, 14400s (4 hours) for trend scouting</li>
 </ul>
-<p><strong>Location:</strong> <code>TheRealAgents/Luna Hart/</code></p>
+<p><strong>Location:</strong> <code>TheRealAgents/Agent_5/</code></p>
 <p><strong>State Machine (v3 - 2026-03-29):</strong></p>
 <pre><code>SCOUT_TRENDS → SYNC_PERFORMANCE → ANALYZE_DATA → PLAN_CONTENT → CREATE_CONTENT
   → CREATE_DRAFTS → CHECK_ENGAGEMENT → LEARN
@@ -706,7 +706,7 @@ MySQL gaps.competitors (JSON field)
 - <code>memory/blog_log.json</code> - Blog post history</p>
 <p><strong>Config:</strong> <code>config/base.json</code></p>
 <pre><code class="language-json">{
-  &quot;agent&quot;: &quot;Luna Hart&quot;,
+  &quot;agent&quot;: &quot;Agent_5&quot;,
   &quot;cycle&quot;: {
     &quot;sleep_between_cycles&quot;: 3600,
     &quot;trend_scout_interval&quot;: 14400
@@ -737,7 +737,7 @@ MySQL gaps.competitors (JSON field)
 - GapFeed API: pulls live stats for content context
 - Shared LLM client: auto-fallback on rate limits
 - Blog (dariocositore.com): SFTP deploy via paramiko
-- Other agents: can receive data from Maya Patel (gaps), Alex Chen (signals)</p>
+- Other agents: can receive data from Agent_6 (gaps), Agent_1 (signals)</p>
 <p><strong>Current Status:</strong> Fully built, 28 tests passing, orchestrator wired, running</p>
 <p><strong>Typefully API v2 Format (2026-03-29):</strong>
 Typefully changed its API payload format. New structure:</p>
@@ -791,12 +791,12 @@ Typefully changed its API payload format. New structure:</p>
 - Requires 3+ feedback entries before generating recommendations
 - SYNC_PERFORMANCE state runs every cycle to sync published posts</p>
 <h3 id="data-flow-full-pipeline">Data Flow (Full Pipeline)</h3>
-<pre><code>Alex Chen (12 API sources, 1s sleep)
+<pre><code>Agent_1 (12 API sources, 1s sleep)
     ↓ MySQL signals table
-Jack Morgan (7 browser sources, 5s sleep)
+Agent_2 (7 browser sources, 5s sleep)
     ↓ MySQL signals table
     ↓
-Maya Patel (classify + gap detect, 30s)
+Agent_6 (classify + gap detect, 30s)
     ↓ MySQL signals table (classified fields updated)
     ↓ MySQL gaps table (new/updated gaps)
     ↓ [every 3 cycles] Page Generator
@@ -804,18 +804,18 @@ Maya Patel (classify + gap detect, 30s)
     ↓   - regenerates sitemap.xml (129 URLs)
     ↓   - deploys gap/ + categories/ + sources/ + sitemap.xml to IONOS
     ↓
-Sam Zhang (health check, 5 min)
+Agent_7 (health check, 5 min)
     ↓ memory/reports/
     ↓ alerts if issues found
     ↓
-Luna Hart (marketing, 1 hour)
+Agent_5 (marketing, 1 hour)
     ↓ trends from Reddit/HN/X/LI
     ↓ content plan via LLM reasoning
     ↓ generated posts via deepseek-v3.2
     ↓ scheduled drafts in Typefully
     ↓ engagement tracking + learning
     ↓
-Jamie Rivera (on-demand only)
+Agent_4 (on-demand only)
     ↓ generates briefs from classified signals
     ↓
 Frontend (server.py on port 5002)
@@ -827,11 +827,11 @@ Website (gapfeed.com - sidebar prototype as index.html)
     ↓
 Blog (dariocositore.com)
     ↓ blog posts deployed via SFTP
-    ↓ Luna Hart manages content
+    ↓ Agent_5 manages content
     ↓
 Social (X + LinkedIn via Typefully)
     ↓ scheduled posts and threads
-    ↓ Luna Hart manages campaigns
+    ↓ Agent_5 manages campaigns
 </code></pre>
 <hr />
 <h2 id="6-analytics-infrastructure">6. Analytics Infrastructure</h2>
@@ -1092,7 +1092,7 @@ Social (X + LinkedIn via Typefully)
 <li>[x] signal_count API fix (db.php vertical filter bug)</li>
 <li>[x] Chart API endpoints (5 new actions in db.php)</li>
 <li>[x] Maya scoring fix (few-shot examples, urgency avg 0.42, sentiment 74/24/2)</li>
-<li>[x] Sam Zhang Telegram notifications (NOTIFY step added)</li>
+<li>[x] Agent_7 Telegram notifications (NOTIFY step added)</li>
 <li>[x] db.php deployed to IONOS</li>
 <li>[x] Prototype wired to live API (8 endpoints, 46KB)</li>
 <li>[x] Maya upgraded to gpt-oss-120b with parallel batch classification</li>
@@ -1102,12 +1102,12 @@ Social (X + LinkedIn via Typefully)
 </ul>
 <h3 id="completed-2026-03-29">Completed (2026-03-29)</h3>
 <ul>
-<li>[x] Luna Hart performance feedback loop (performance_tracker.py, 28 tests passing)</li>
-<li>[x] Luna Hart blog approval flow (Telegram callback with Approve/Reject, SFTP deploy)</li>
-<li>[x] Luna Hart T+1 only scheduling (data freshness, never past tomorrow)</li>
+<li>[x] Agent_5 performance feedback loop (performance_tracker.py, 28 tests passing)</li>
+<li>[x] Agent_5 blog approval flow (Telegram callback with Approve/Reject, SFTP deploy)</li>
+<li>[x] Agent_5 T+1 only scheduling (data freshness, never past tomorrow)</li>
 <li>[x] Typefully API v2 format migration (platforms dict, posts[].text, publish_at)</li>
-<li>[x] Luna Hart state machine: SCHEDULE_POSTS -&gt; CREATE_DRAFTS, added SYNC_PERFORMANCE</li>
-<li>[x] Luna Hart singleton lock (PID-based lock file, prevents duplicate instances)</li>
+<li>[x] Agent_5 state machine: SCHEDULE_POSTS -&gt; CREATE_DRAFTS, added SYNC_PERFORMANCE</li>
+<li>[x] Agent_5 singleton lock (PID-based lock file, prevents duplicate instances)</li>
 <li>[x] Gap description rewrite Phase 1 (competitor intelligence pipeline, no DDG)</li>
 <li>[x] mention_resolver.py - 100+ alias mappings, canonical entity resolution</li>
 <li>[x] cluster_context_builder.py - per-cluster market context aggregation</li>
@@ -1115,7 +1115,7 @@ Social (X + LinkedIn via Typefully)
 <li>[x] DB migration: signals.gap_id + signals.category columns</li>
 <li>[x] DB migration: gaps.competitors JSON column (insert_gap + update_gap)</li>
 <li>[x] PHP API deployed with competitor support</li>
-<li>[x] HEARTBEAT.md updated with Luna Hart singleton lock rules</li>
+<li>[x] HEARTBEAT.md updated with Agent_5 singleton lock rules</li>
 </ul>
 <h3 id="phase-2-competitor-intelligence-completed-2026-03-29">Phase 2 - Competitor Intelligence (Completed 2026-03-29)</h3>
 <ul>
@@ -1150,7 +1150,7 @@ Social (X + LinkedIn via Typefully)
 <li>[x] Source normalization fix for quote display (normalizeSource() maps www.reddit.com -&gt; reddit, etc.)</li>
 <li>[x] Custom 404 page with sad face joke, deployed with .htaccess ErrorDocument</li>
 <li>[x] Gap pages, categories, sources all deployed to IONOS</li>
-<li>[x] Agents restarted (Maya Patel and Sam Zhang died silently, revived with correct working directory)</li>
+<li>[x] Agents restarted (Agent_6 and Agent_7 died silently, revived with correct working directory)</li>
 <li>[x] Google Analytics tag (G-FXVLBGRXX8) added to main page</li>
 <li>[x] Google Search Console set up and sitemap submitted (Dario)</li>
 <li>[x] OG image created and deployed (og-image.png, 1200x630)</li>
@@ -1162,9 +1162,9 @@ Social (X + LinkedIn via Typefully)
 <li>[x] Social sharing buttons on gap pages (X, LinkedIn, Copy link)</li>
 <li>[x] Social sharing in sidebar SPA gap detail view</li>
 <li>[x] Share tweets tagged @DarioCositore</li>
-<li>[x] Luna Hart agent fully built (9 modules, 11 tests passing)</li>
-<li>[x] Luna Hart orchestrator wired (7 states, all functional)</li>
-<li>[x] Luna Hart uses shared LLM client with deepseek-v3.2 as primary</li>
+<li>[x] Agent_5 agent fully built (9 modules, 11 tests passing)</li>
+<li>[x] Agent_5 orchestrator wired (7 states, all functional)</li>
+<li>[x] Agent_5 uses shared LLM client with deepseek-v3.2 as primary</li>
 <li>[x] 32 social media posts created and scheduled in Typefully</li>
 <li>[x] Phase 1 social content strategy (ramp-up: 6→8→10→8 posts/week)</li>
 <li>[x] Telegram model alias fix (added <code>pro -&gt; openrouter/xiaomi/mimo-v2-pro</code>)</li>
@@ -1188,8 +1188,8 @@ Social (X + LinkedIn via Typefully)
 <li><strong>Sitemap URLs:</strong> 103+</li>
 <li><strong>Domain:</strong> gapfeed.com (rebranded from gapfeed.com)</li>
 <li><strong>Sources:</strong> 12 (Reddit, DDG, HN, SO, Dev.to, RSS, YouTube, Indie Hackers, GitHub Issues, Google News, GitHub Discussions, Product Hunt)</li>
-<li><strong>Agents:</strong> Alex Chen, Maya Patel, Sam Zhang, Luna Hart running</li>
-<li><strong>Jack Morgan:</strong> Paused (under reconstruction, search engine blocking)</li>
+<li><strong>Agents:</strong> Agent_1, Agent_6, Agent_7, Agent_5 running</li>
+<li><strong>Agent_2:</strong> Paused (under reconstruction, search engine blocking)</li>
 <li><strong>Server:</strong> UP on port 5002</li>
 <li><strong>API:</strong> gapfeed.com/api/db.php (11,322 signals confirmed)</li>
 <li><strong>Social:</strong> 32 posts scheduled in Typefully (Mar 30 - Apr 24)</li>
@@ -1201,15 +1201,15 @@ Social (X + LinkedIn via Typefully)
 <li>[ ] Newsletter / "Weekly Top Gaps" email (high retention + growth driver)</li>
 <li>[ ] News adapter for Alex (Google News, Product Hunt, Indie Hackers)</li>
 <li>[ ] Add more sources: GitHub issues, Quora</li>
-<li>[ ] Test Luna Hart with live data (first cycle run)</li>
-<li>[ ] Wire Luna Hart into OpenClaw as background agent</li>
+<li>[ ] Test Agent_5 with live data (first cycle run)</li>
+<li>[ ] Wire Agent_5 into OpenClaw as background agent</li>
 </ul>
 <h3 id="medium-priority">Medium Priority</h3>
 <ul>
 <li>[ ] Mobile responsive testing with live data</li>
 <li>[ ] Searchbar intelligent search (categories, direct pain, similar pains)</li>
 <li>[ ] Data hygiene cleanup script</li>
-<li>[ ] RSS feed parse error fix (Jack Morgan)</li>
+<li>[ ] RSS feed parse error fix (Agent_2)</li>
 <li>[ ] Blog / Insights section (SEO + thought leadership)</li>
 </ul>
 <h3 id="low-priority">Low Priority</h3>
@@ -1375,12 +1375,12 @@ Social (X + LinkedIn via Typefully)
 </tr>
 <tr>
 <td>2026-03-28</td>
-<td>Luna Hart agent created</td>
+<td>Agent_5 agent created</td>
 <td>Marketing/community manager AI for blog + social + trends</td>
 </tr>
 <tr>
 <td>2026-03-28</td>
-<td>Luna Hart uses deepseek-v3.2</td>
+<td>Agent_5 uses deepseek-v3.2</td>
 <td>Best creative writing quality, primary model for content</td>
 </tr>
 <tr>
@@ -1495,12 +1495,12 @@ Social (X + LinkedIn via Typefully)
 </tr>
 <tr>
 <td>2026-03-29</td>
-<td>Luna Hart state rename: SCHEDULE_POSTS -&gt; CREATE_DRAFTS</td>
+<td>Agent_5 state rename: SCHEDULE_POSTS -&gt; CREATE_DRAFTS</td>
 <td>Better reflects approval-based flow</td>
 </tr>
 <tr>
 <td>2026-03-29</td>
-<td>Luna Hart singleton lock</td>
+<td>Agent_5 singleton lock</td>
 <td>PID-based lock file prevents duplicate instances from heartbeat restarts</td>
 </tr>
 <tr>
@@ -1575,7 +1575,7 @@ Social (X + LinkedIn via Typefully)
 </tr>
 <tr>
 <td>2026-03-29</td>
-<td>Jack Morgan paused - search engines block headless</td>
+<td>Agent_2 paused - search engines block headless</td>
 <td>DDG, Google, Brave all captcha-block Playwright. Jack role pending redefinition.</td>
 </tr>
 </tbody>

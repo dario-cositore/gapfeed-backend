@@ -1,3 +1,0 @@
-"""
-Sam Zhang app package.
-"""

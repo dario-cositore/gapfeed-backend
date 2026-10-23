@@ -33,7 +33,7 @@ A founder in healthcare, real estate, education, or consumer goods will find les
 - IndieHackers discussions
 - Open platforms of professional experts
 
-### 4. Jack Morgan (Browser Scout) — Under Reconstruction
+### 4. Agent_2 (Browser Scout) — Under Reconstruction
 
 Browser-based search (DDG, Google, Brave) all block headless browsers with captchas. Playwright/Chromium processes leak memory (2+ GB per instance). Jack's role is being redefined — options include content deep-dive on URLs from Alex's signals, niche site specialist, or LLM classifier for signal enrichment.
 

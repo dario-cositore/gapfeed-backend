@@ -1,0 +1,53 @@
+{
+  "agent": "Agent_7",
+  "role": "System Monitor",
+  "vertical": "general",
+  "cycle": {
+    "sleep_between_cycles": 300,
+    "alert_threshold_stale_minutes": 30
+  },
+  "monitors": {
+    "agents": {
+      "enabled": true,
+      "expected_agents": [
+        "Agent_1",
+        "Agent_6"
+      ],
+      "check_logs": true,
+      "log_max_age_minutes": 15
+    },
+    "server": {
+      "enabled": true,
+      "url": "https://gapfeed.com/api/db.php?action=stats",
+      "api_key": "${GAPFEED_API_KEY}",
+      "timeout": 15
+    },
+    "database": {
+      "enabled": true,
+      "api_url": "https://gapfeed.com/api/db.php",
+      "api_key": "${GAPFEED_API_KEY}"
+    },
+    "system": {
+      "enabled": true,
+      "check_disk": true,
+      "check_processes": true
+    }
+  },
+  "telegram": {
+    "enabled": true,
+    "bot_token": "${TELEGRAM_BOT_TOKEN}",
+    "chat_id": "${TELEGRAM_CHAT_ID}",
+    "cooldown_minutes": 15
+  },
+  "llm": {
+    "model": "xiaomi/mimo-v2-flash",
+    "timeout": 30,
+    "temperature": 0.1,
+    "max_tokens": 2000
+  },
+  "paths": {
+    "memory_dir": "memory",
+    "state_dir": "state",
+    "logs_dir": "logs"
+  }
+}

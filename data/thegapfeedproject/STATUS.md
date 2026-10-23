@@ -13,7 +13,7 @@ _Last updated: 2026-05-14_
 
 ## What's Running
 
-- **5 autonomous agents** — Alex Chen (Scout), Maya Patel (Classifier), Sam Zhang (Monitor), Luna Hart (Marketing), Jamie Rivera (Briefs)
+- **5 autonomous agents** — Agent_1 (Scout), Agent_6 (Classifier), Agent_7 (Monitor), Agent_5 (Marketing), Agent_4 (Briefs)
 - **Signal extraction** — Reddit, HN, YouTube, GitHub, DuckDuckGo, RSS, Stack Overflow, Dev.to, Google News, GitHub Issues/Discussions, Product Hunt
 - **Classification pipeline** — Multi-model LLM classification with per-agent model optimization
 - **Clustering** — Pattern-based grouping into specific gaps with competitor intelligence
@@ -35,7 +35,7 @@ _Last updated: 2026-05-14_
 
 ## What Needs Work
 
-- **Jack Morgan (Browser Scout)** — Currently under reconstruction. Browser-based search blocked by captchas. Role being redefined.
+- **Agent_2 (Browser Scout)** — Currently under reconstruction. Browser-based search blocked by captchas. Role being redefined.
 - **Source diversity** — Expanding beyond SaaS/B2B into healthcare, fintech, legal, education
 - **API access** — Public API for programmatic gap data access
 - **Monetization** — Revenue model: behavioral intent data farming (searches, clicks, exploration patterns)
@@ -50,7 +50,7 @@ _Last updated: 2026-05-14_
 ## Outbound Outreach
 
 - Social media content pipeline active via Typefully (X + LinkedIn)
-- Blog content managed by Luna Hart with Telegram approval workflow
+- Blog content managed by Agent_5 with Telegram approval workflow
 - T+1 scheduling ensures all content reflects data less than 24 hours old
 
 ## What We Need

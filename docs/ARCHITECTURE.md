@@ -56,11 +56,11 @@ Not search, not social listening. Scans the internet 24/7, clusters signals into
 
 | Agent | Primary Model | Fallback | Why |
 |-------|--------------|----------|-----|
-| **Maya Patel** (Classifier) | `openai/gpt-oss-120b` | - | 50+ classifications/cycle, need speed |
-| **Luna Hart** (Marketing) | `deepseek/deepseek-v3.2` | `xiaomi/mimo-v2-flash` | Creative writing, quality matters |
-| **Alex Chen** (Scout) | `xiaomi/mimo-v2-flash` | - | Default, good enough for signal enrichment |
-| **Sam Zhang** (Monitor) | `xiaomi/mimo-v2-flash` | - | Default, health checks don't need premium |
-| **Jamie Rivera** (Briefs) | `xiaomi/mimo-v2-flash` | - | Default, on-demand briefs |
+| **Agent_6** (Classifier) | `openai/gpt-oss-120b` | - | 50+ classifications/cycle, need speed |
+| **Agent_5** (Marketing) | `deepseek/deepseek-v3.2` | `xiaomi/mimo-v2-flash` | Creative writing, quality matters |
+| **Agent_1** (Scout) | `xiaomi/mimo-v2-flash` | - | Default, good enough for signal enrichment |
+| **Agent_7** (Monitor) | `xiaomi/mimo-v2-flash` | - | Default, health checks don't need premium |
+| **Agent_4** (Briefs) | `xiaomi/mimo-v2-flash` | - | Default, on-demand briefs |
 | **Gap descriptions** | `google/gemini-3-flash-preview` | - | Best quality/cost for gap writing |
 
 ---
@@ -68,9 +68,9 @@ Not search, not social listening. Scans the internet 24/7, clusters signals into
 ## 4. Data Flow
 
 ```
-Alex Chen (12 API sources, 1s sleep)
+Agent_1 (12 API sources, 1s sleep)
     ↓ MySQL signals table
-Maya Patel (classify + gap detect, 30s)
+Agent_6 (classify + gap detect, 30s)
     ↓ MySQL signals table (classified fields updated)
     ↓ MySQL gaps table (new/updated gaps)
     ↓ [every 3 cycles] Page Generator
@@ -78,18 +78,18 @@ Maya Patel (classify + gap detect, 30s)
     ↓   - regenerates sitemap.xml
     ↓   - deploys to IONOS via SFTP
     ↓
-Sam Zhang (health check, 5 min)
+Agent_7 (health check, 5 min)
     ↓ memory/reports/
     ↓ Telegram alerts if issues found
     ↓
-Luna Hart (marketing, 1 hour)
+Agent_5 (marketing, 1 hour)
     ↓ trends from Reddit/HN/X/LI
     ↓ content plan via LLM reasoning
     ↓ generated posts via deepseek-v3.2
     ↓ scheduled drafts in Typefully (T+1 only)
     ↓ engagement tracking + learning
     ↓
-Jamie Rivera (on-demand only)
+Agent_4 (on-demand only)
     ↓ generates briefs from classified signals
 ```
 

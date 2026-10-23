@@ -9,7 +9,7 @@ What changed, when, and why.
 | Change | Impact |
 |--------|--------|
 | Rebranded from TuXo to GapFeed | All 213 HTML files, agent configs, shared modules updated |
-| 5-agent architecture fully operational | Alex Chen (Scout), Maya Patel (Classifier), Sam Zhang (Monitor), Luna Hart (Marketing), Jamie Rivera (Briefs) |
+| 5-agent architecture fully operational | Agent_1 (Scout), Agent_6 (Classifier), Agent_7 (Monitor), Agent_5 (Marketing), Agent_4 (Briefs) |
 | Competitor intelligence pipeline launched | 3-layer architecture: mention resolver → cluster context builder → gap detector |
 | Signals processed: 189,000+ | Across 12 sources with cross-source correlation |
 | Public repo prepared | Sanitized and documented for GitHub release |
@@ -67,11 +67,11 @@ What changed, when, and why.
 
 We evolved from a single-pipeline approach to a 5-agent architecture. Each agent has a dedicated role, its own LLM model optimized for its task, and independent checkpoint/restore capability:
 
-- **Alex Chen** (Scout) — 12 API sources, 1s cycle, `mimo-v2-flash` for speed
-- **Maya Patel** (Classifier) — LLM classification + gap detection, `gpt-oss-120b` for throughput
-- **Sam Zhang** (Monitor) — Health checks + Telegram alerts, `mimo-v2-flash`
-- **Luna Hart** (Marketing) — Social + blog + trends, `deepseek-v3.2` for creative quality
-- **Jamie Rivera** (Briefs) — On-demand brief synthesis, `mimo-v2-flash`
+- **Agent_1** (Scout) — 12 API sources, 1s cycle, `mimo-v2-flash` for speed
+- **Agent_6** (Classifier) — LLM classification + gap detection, `gpt-oss-120b` for throughput
+- **Agent_7** (Monitor) — Health checks + Telegram alerts, `mimo-v2-flash`
+- **Agent_5** (Marketing) — Social + blog + trends, `deepseek-v3.2` for creative quality
+- **Agent_4** (Briefs) — On-demand brief synthesis, `mimo-v2-flash`
 
 Agents coordinate through the shared MySQL database, not direct communication. This means any agent can crash without affecting the others, and each can be restarted independently from its last checkpoint.
 
