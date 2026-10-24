@@ -16,6 +16,7 @@ data/briefs/
 .env
 .env.local
 .env.*.local
+.venv/
 config/secrets.env
 api/config.local.php
 
