@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Enrich gaps with Claude Sonnet 4.6 via OpenRouter
+Enrich gaps with Xiaomi Mimo (token plan) via the OpenAI-compatible endpoint.
 3-Layer Process: Draft → Critique → Polish
 
 CRITICAL: All prompts ban em dashes (—) - never use them.
@@ -19,10 +19,14 @@ from typing import List, Dict, Any
 # CONFIGURATION
 # ══════════════════════════════════════════════════════════
 
-DB_PATH = '/home/dario/.openclaw/workspace/3. gapfeed/code/data/gapfeed_unified.db'
-OPENROUTER_KEY = os.environ.get('OPENROUTER_API_KEY', '')
-DEFAULT_MODEL = 'anthropic/claude-sonnet-4.6'
-API_URL = 'https://openrouter.ai/api/v1/chat/completions'
+DB_PATH = '/home/dario/.openclaw/workspace/3. gapfeed/gapfeed/data/signals.db'
+# Use the Mimo TOKEN PLAN (fixed subscription) endpoint, not the pay-as-you-go API key.
+# Set MIMO_API_KEY to your tp-/ttp- token plan key and MIMO_OPENAI_BASE_URL to the
+# regional token-plan host (e.g. https://token-plan-ams.xiaomimimo.com/v1).
+MIMO_API_KEY = os.environ.get('MIMO_API_KEY', '') or os.environ.get('OPENROUTER_API_KEY', '')
+MIMO_BASE_URL = os.environ.get('MIMO_OPENAI_BASE_URL', 'https://token-plan-ams.xiaomimimo.com/v1').rstrip('/')
+DEFAULT_MODEL = os.environ.get('MIMO_MODEL', 'mimo-v2.6-flash')
+API_URL = f'{MIMO_BASE_URL}/chat/completions'
 
 OUTPUT_PATH = '/home/dario/.openclaw/workspace/3. gapfeed/website/gapfeed.com/gapfeed-astro/public/data/data.json'
 
@@ -147,9 +151,11 @@ def extract_json_from_content(content: str) -> Dict[str, Any]:
     return {'_error': 'No JSON found in response', 'raw': content[:200]}
 
 def call_llm(system_prompt: str, user_prompt: str, max_tokens: int = 1000, temperature: float = 0.7) -> Dict[str, Any]:
-    """Call OpenRouter API with configurable model."""
+    """Call the Mimo TOKEN PLAN endpoint (OpenAI-compatible)."""
+    if not MIMO_API_KEY:
+        return {'_error': 'No MIMO_API_KEY set (token plan key).'}
     headers = {
-        'Authorization': f'Bearer {OPENROUTER_KEY}',
+        'Authorization': f'Bearer {MIMO_API_KEY}',
         'Content-Type': 'application/json',
     }
     
@@ -161,7 +167,6 @@ def call_llm(system_prompt: str, user_prompt: str, max_tokens: int = 1000, tempe
         ],
         'max_tokens': max_tokens,
         'temperature': temperature,
-        'response_format': {'type': 'json_object'},
     }
     
     try:

@@ -13,7 +13,12 @@ import requests
 logger = logging.getLogger(__name__)
 
 MIMO_API_KEY = os.environ.get("MIMO_API_KEY", "") or os.environ.get("OPENROUTER_API_KEY", "")
-MIMO_BASE_URL = os.environ.get("MIMO_OPENAI_BASE_URL", "").rstrip("/")
+# Default to the Mimo TOKEN PLAN (fixed subscription) endpoint when a tp-/ttp- key is
+# provided but no explicit base URL is set, so the subscription quota is used first.
+_default_base = os.environ.get("MIMO_OPENAI_BASE_URL", "").rstrip("/")
+if not _default_base and MIMO_API_KEY.startswith(("tp-", "ttp-")):
+    _default_base = "https://token-plan-ams.xiaomimimo.com/v1"
+MIMO_BASE_URL = _default_base
 OPENROUTER_API_KEY = MIMO_API_KEY
 OPENROUTER_URL = f"{MIMO_BASE_URL}/chat/completions" if MIMO_BASE_URL else "https://openrouter.ai/api/v1/chat/completions"
 DEFAULT_MODEL = "mimo-v2.6-flash"
