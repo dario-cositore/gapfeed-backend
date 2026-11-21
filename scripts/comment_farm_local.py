@@ -3,11 +3,11 @@
 YOUTUBE COMMENT FARM — Working Version
 Extracts comments with exact URLs, saves to database
 """
-import json, urllib.request, urllib.parse, ssl, sqlite3, time, sys
+import json, urllib.request, urllib.parse, ssl, sqlite3, time, sys, os
 from datetime import datetime, timezone
 
 # YouTube innertube API key
-KEY = "os.environ.get('GOOGLE_API_KEY', '')"
+KEY = os.environ.get('GOOGLE_API_KEY', '')
 
 # Database path
 DB_PATH = '/home/dario/.openclaw/workspace/3. gapfeed/code/data/gapfeed_unified.db'
